@@ -18,29 +18,5 @@ This project provides a simple yet powerful chatbot API to answer user questions
 - RESTful API built with FastAPI.
 - Database schema managed with Alembic migrations.
 
----
-
-## Project Structure
-
-ai_faq_bot/
-│
-├── alembic/                                   # Alembic migration scripts
-│ ├── versions/                                # Migration version files
-│ └── env.py                                   # Alembic environment configuration
-│
-├── app/
-│ ├── init.py
-│ ├── main.py                                   # FastAPI application entry point
-│ ├── models.py                                 # SQLAlchemy ORM models
-│ ├── crud.py                                   # Database CRUD operations
-│ ├── schemas.py                               # Pydantic schemas for request/response validation
-│ ├── routes.py                                # API routes
-│ ├── llm.py                                   # Language model integration for answer generation
-│ └── database.py                               # Database connection and Base metadata
-│
-├── .env                                       # Environment variables (e.g., DATABASE_URL)
-├── alembic.ini                                # Alembic configuration file
-├── requirements.txt                           # Python dependencies
-└── README.md                                   # Project documentation (this file)
 
 
